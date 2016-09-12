@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<script type="text/javascript" src="jquery.js" ></script>
+<script type="text/javascript">
+$(function(){
+  var currentIndex = 0;
+  var imgtotal = $("#show-area ul li").length;
+  var autoPlayIndex = 0;
+  var imgwidth = $("#show-area ul li").width();
+    for (var i = 0; i < imgtotal; i++) {
+      $("#controler").append("<div>"+i+"</div>");
+    };
+    $("#controler div").eq(0).addClass("onclick");
+    $("#controler div").each(function(){
+      $(this).click(function(){
+          autoPlayIndex = $(this).index();
+          Change(this);
+      })
+    });
+    function Change(obj){
+      currentIndex = $(obj).index();
+      $("#show-area ul").animate({left:-currentIndex * imgwidth},500);
+      $("#controler div").eq(currentIndex).addClass("onclick").siblings().removeClass("onclick");
+    }
+    var auto = setInterval(function(){autochange();},2000);
+    function autochange(){
+        autoPlayIndex = (autoPlayIndex + 1) % imgtotal;
+        $("#controler div").eq(autoPlayIndex).trigger("click");
+    }
+    $("#show-area ul li,#controler div").hover(function(){clearInterval(auto)}
+    ,function(){
+      auto = setInterval(function(){autochange();},2000)
+    })
+})
+</script>
+<style type="text/css">
+*{padding: 0; margin: 0; list-style: none;}
+#wrapper{margin: 0px auto;}
+#show-area{ width: 800px; height: 450px; position: relative; overflow:hidden;
+margin: 100px auto;}
+#show-area ul{ position: relative; width: 3200px;}
+#show-area ul li{ width: 800px; height: 450px; float: left;}
+#controler{ position: absolute; width: 150px; height: 20px; left: 969px;
+  top: 530px;}
+#controler div{margin-left: .5em; float: left; height: 15px; width: 15px;
+  border-radius: 100%; background-color: #ccc; text-align: center; cursor: pointer;
+font: 10px; line-height: 15px;}
+.onclick{background: #fff !important;}
+#show-area li img{ width: 100%; height: 100%;}
+.ctrl{position: absolute; font-size: 50px; line-height:50px; color: #FFF;  text-decoration:none;
+      text-align: center; top: 45%; background: rgba(0,0,0,0.3); height: 50px; width: 30px;  display: none;}
+.left{left: 0;}
+.right{right: 0;}
+.test{width: 200px; height: 200px; background: black;}
+#show-area :hover .ctrl{ display: block;}
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <div id="show-area">
+      <ul>
+        <li id="first"><img src="images/1.jpg" ></li>
+        <li><img src="images/2.jpg" ></li>
+        <li><img src="images/3.jpg" ></li>
+        <li><img src="images/4.jpg" ></li>
+      </ul>
+      <a href="javascript:;" class="ctrl left">&lt;</a>
+      <a href="javascript:;"class="ctrl right">&gt;</a>
+  </div>
+  <div id="controler"></div>
+</div>
+<div class="test"></div>
+</body>
+</html>

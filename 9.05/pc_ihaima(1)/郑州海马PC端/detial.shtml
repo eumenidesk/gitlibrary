@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<!--
+Author: songcf
+date: 2015-7-08
+date: 2016-03-03
+-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>【海马汽车官方旗舰店】海马汽车车型优惠_底价买车-易车惠</title>
+        <meta content="all" name="robots" />
+        <meta name="description" content="易车惠-奥迪官方旗舰店提供奥迪最新车型优惠价格信息，包含奥迪汽车报价及图片信息，底价买车上易车惠奥迪官方旗舰店." />
+        <meta name="keywords" content="汽车，汽车网站，北京汽车网，北京汽车报价，北京车市，北京汽车报道，北京易车网" /> 
+        <meta itemprop="image" content="images/share_logo.jpg">
+        <meta itemprop="name" content="【海马汽车官方旗舰店】海马汽车车型优惠_底价买车-易车惠">
+        <meta name="description" itemprop="description" content="【海马汽车官方旗舰店】海马汽车车型优惠_底价买车-易车惠">
+        <link href="common/style.css" rel="stylesheet" type="text/css" />
+        <script src="http://www.bitauto.com/zhuanti/adtopic/js/jquery-1.8.3.min.js" type="text/javascript" ></script>
+        <script src="common/common.js" type="text/javascript" ></script> 
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                  var hm = document.createElement("script");
+                  hm.src = "//hm.baidu.com/hm.js?d04fb345983e3d674c8d73ba56b36d11";
+                  var s = document.getElementsByTagName("script")[0]; 
+                  s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </head>
+    
+    <body>
+        <!--header start-->
+        <!--#include file="/include/special/2010/00001/2014_topic_head_Manual.shtml"-->
+        <!--header end-->
+        <!--header_logo start-->
+        <!--#include file="/zhuanti/adtopic/yichehuitopadmin/top.html"-->
+        <!--header_logo end-->
+        <style type="text/css">
+        .bit990{width: 1200px;}
+        .foot_box .w990{width: 1200px;}
+        </style>
+        
+        
+        <div class="main_logo">
+            <div class="cont_logo">
+                <h1><a href="index.shtml"><img src="images/logo.png" alt="海马汽车官方旗舰店">海马汽车官方旗舰店</a></h1>
+            </div>
+        </div>
+        
+        <div class="main_nav">
+            <div class="cont_nav">
+                <a href="index.shtml" target="_self">首页</a>
+                <a href="dealer.shtml" target="_self">经销商列表</a>
+                <a href="info.shtml" target="_self">购买须知</a>
+                <a href="brand.shtml" target="_self">品牌故事</a>
+            </div>
+        </div>
+        <div class="cont_detial">
+             <h1>参与细则</h1>
+             <img src="images/detail1.jpg" width="1200" />
+             <div class="clearfix"></div> 
+        </div>
+        <!--footer start-->
+        <!--#include file="/zhuanti/adtopic/yichehuitopadmin/bottom.html"-->
+        <!--footer end-->
+    </body>
+</html>
